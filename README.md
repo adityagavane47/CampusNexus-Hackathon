@@ -106,4 +106,10 @@ Want to see CampusNexus in action? Read the narrative walkthrough:
 
 ---
 
-**Made with ❤️ by Team Amateur @ VIT Pune**
+## 👥 Team
+
+*   **Aditya Gavane** (Solo Developer)
+
+---
+
+**Made with ❤️ at VIT Pune**
