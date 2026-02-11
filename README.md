@@ -132,4 +132,4 @@ Want to see CampusNexus in action? Read the narrative walkthrough:
 
 ## 👥 Team Amateur
 
-*   **Aditya Gavane** (Solo Developer)
+*   **Aditya Gavane** - Backend & Blockchain Architecture
