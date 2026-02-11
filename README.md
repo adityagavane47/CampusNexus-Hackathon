@@ -117,7 +117,7 @@
 
 To audit the technical health of this repository (LocalNet status, dependencies, environment variables), run the included verification script:
 
-```bash
+bash
 ./VERIFY.sh
 
 
