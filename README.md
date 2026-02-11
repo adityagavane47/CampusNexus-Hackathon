@@ -62,7 +62,7 @@
 ├── Alokit_setup.md          # Environment setup instructions
 └── VERIFY.sh                # Script for project verification/testing
 ---
-
+```
 ## ⚡ Quick Start
 
 ### Prerequisites
@@ -119,7 +119,7 @@ To audit the technical health of this repository (LocalNet status, dependencies,
 
 ```bash
 ./VERIFY.sh
-```
+
 
 ---
 
