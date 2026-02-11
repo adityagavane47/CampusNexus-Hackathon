@@ -1,20 +1,20 @@
-# 🎓 CampusNexus - Decentralized Campus Ecosystem
+# CampusNexus - Decentralized Campus Ecosystem
 
 **CampusNexus** is a decentralized platform designed for **VIT Pune**, enabling students to collaborate, trade, and build their on-chain professional reputation. It leverages the **Algorand** blockchain to provide a trustless environment for student interactions.
 
 ---
 
-##  Key Features
+## Key Features
 
-*   ** AI Skill-Matcher**: Connects students with complementary skills for hackathons and projects using AI-driven matching.
-*   ** MilestoneEscrow**: A smart contract-based escrow system that ensures fair payments for freelance work. Funds are released only when milestones are approved.
-*   ** Hustle-Score**: An on-chain reputation system. Successful collaborations and completed projects increase a student's score, unlocking badges and opportunities.
-*   ** Student Marketplace**: A peer-to-peer marketplace for trading campus essentials (books, electronics, etc.) using ALGO or stablecoins.
-*   ** Soulbound Tokens (SBTs)**: Non-transferable tokens that certify achievements, roles (e.g., "Core Committee Member"), and skills.
+*   **AI Skill-Matcher**: Connects students with complementary skills for hackathons and projects using AI-driven matching.
+*   **MilestoneEscrow**: A smart contract-based escrow system that ensures fair payments for freelance work. Funds are released only when milestones are approved.
+*   **Hustle-Score**: An on-chain reputation system. Successful collaborations and completed projects increase a student's score, unlocking badges and opportunities.
+*   **Student Marketplace**: A peer-to-peer marketplace for trading campus essentials (books, electronics, etc.) using ALGO or stablecoins.
+*   **Soulbound Tokens (SBTs)**: Non-transferable tokens that certify achievements, roles (e.g., "Core Committee Member"), and skills.
 
 ---
 
-## 🔄 Workflow
+## Workflow
 
 ![CampusNexus Workflow](assets/workflow-diagram.png)
 
@@ -69,7 +69,7 @@
 └── VERIFY.sh                # Script for project verification/testing
 ---
 ```
-## ⚡ Quick Start
+## Quick Start
 
 ### Prerequisites
 *   [Docker](https://www.docker.com/) (must be running)
@@ -119,7 +119,7 @@
 
 ---
 
-## 🧪 Verification
+## Verification
 
 To audit the technical health of this repository (LocalNet status, dependencies, environment variables), run the included verification script:
 
@@ -129,13 +129,13 @@ bash
 
 ---
 
-## 📖 Walkthrough
+## Walkthrough
 
 Want to see CampusNexus in action? Read the narrative walkthrough:
-👉 [**WALKTHROUGH.md**](./WALKTHROUGH.md)
+* [**WALKTHROUGH.md**](./WALKTHROUGH.md)
 
 ---
 
-## 👥 Team Amateur
+## Team Amateur
 
 *   **Aditya Gavane** - Backend & Blockchain Architecture
