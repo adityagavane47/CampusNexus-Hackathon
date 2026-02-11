@@ -14,6 +14,53 @@
 
 ---
 
+## 🔄 Workflow
+
+```mermaid
+graph TD
+    Start((Start)) --> Connect[Connect Pera Wallet]
+    Connect --> Auth{Authenticated?}
+    Auth -- No --> Connect
+    Auth -- Yes --> Dash[Main Dashboard]
+
+    subgraph Discovery [Discovery Layer]
+    Dash --> Feed[Browse Project Feed]
+    Dash --> Market[Browse Marketplace]
+    end
+
+    subgraph Collab [Collaborative & Finance Flow]
+    Feed --> Create[Create Project]
+    Feed --> Apply[Apply to Project]
+    Create --> Deploy[Deploy Escrow Smart Contract]
+    Apply --> Select[Client Selects Freelancer]
+    Deploy --> Select
+    Select --> Fund[Client Funds Escrow Contract]
+    Fund --> Work[Freelancer Performs Work]
+    Work --> Mark[Freelancer Marks Milestone Complete]
+    Mark --> Approve{Client Approves?}
+    Approve -- No --> Dispute[Dispute/Review]
+    Approve -- Yes --> Release[Contract Releases ALGO to Freelancer]
+    end
+
+    subgraph P2P [P2P Marketplace Flow]
+    Market --> List[Student Lists Item]
+    Market --> Buy[Student Makes Purchase]
+    List --> Transfer[Algorand Atomic Transfer<br/>ALGO <-> Item Ownership]
+    Buy --> Transfer
+    end
+
+    subgraph Reputation [Reputation System]
+    Release --> Update[Backend Updates Score]
+    Transfer --> Update
+    Update --> Store[Smart Contract Stores SBT]
+    Store --> Profile[Student Profile Updated On-Chain]
+    end
+
+    Profile --> End((End Transaction))
+```
+
+---
+
 ##  Tech Stack
 
 *   **Blockchain**: Algorand (PyTeal / Beaker / AlgoKit)
