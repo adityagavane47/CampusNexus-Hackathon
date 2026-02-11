@@ -4,17 +4,17 @@
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-*   **✨ AI Skill-Matcher**: Connects students with complementary skills for hackathons and projects using AI-driven matching.
-*   **🤝 MilestoneEscrow**: A smart contract-based escrow system that ensures fair payments for freelance work. Funds are released only when milestones are approved.
-*   **🏆 Hustle-Score**: An on-chain reputation system. Successful collaborations and completed projects increase a student's score, unlocking badges and opportunities.
-*   **🛒 Student Marketplace**: A peer-to-peer marketplace for trading campus essentials (books, electronics, etc.) using ALGO or stablecoins.
-*   **🆔 Soulbound Tokens (SBTs)**: Non-transferable tokens that certify achievements, roles (e.g., "Core Committee Member"), and skills.
+*   ** AI Skill-Matcher**: Connects students with complementary skills for hackathons and projects using AI-driven matching.
+*   ** MilestoneEscrow**: A smart contract-based escrow system that ensures fair payments for freelance work. Funds are released only when milestones are approved.
+*   ** Hustle-Score**: An on-chain reputation system. Successful collaborations and completed projects increase a student's score, unlocking badges and opportunities.
+*   ** Student Marketplace**: A peer-to-peer marketplace for trading campus essentials (books, electronics, etc.) using ALGO or stablecoins.
+*   ** Soulbound Tokens (SBTs)**: Non-transferable tokens that certify achievements, roles (e.g., "Core Committee Member"), and skills.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 *   **Blockchain**: Algorand (PyTeal / Beaker / AlgoKit)
 *   **Frontend**: React, Vite, TailwindCSS
@@ -24,19 +24,43 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-This repository follows the **AlgoKit** monorepo structure:
-
-*   `projects/contracts`: **Smart Contracts** (Python/Beaker).
-    *   `smart_contracts/marketplace`: Logic for the item marketplace.
-    *   `smart_contracts/escrow`: The MilestoneEscrow logic.
-    *   `smart_contracts/hustle_score`: Reputation management logic.
-*   `projects/backend`: **API Server** (FastAPI).
-    *   Handles off-chain logic, AI matching, and serving the frontend.
-*   `projects/frontend`: **Web Application** (React).
-    *   The user interface for students to interact with the platform.
-
+```text
+.
+├── .algokit/                # AlgoKit configuration, templates, and generators
+├── .github/workflows/       # CI/CD pipelines for contracts and frontend deployment
+├── projects/
+│   ├── backend/             # FastAPI Backend Service
+│   │   ├── app/
+│   │   │   ├── models/      # Data models (User, Notification, etc.)
+│   │   │   ├── routers/     # API Endpoints (AI, Auth, Escrow, Marketplace)
+│   │   │   ├── services/    # Business logic (AI matching, Algorand integration)
+│   │   │   └── utils/       # Database and utility helpers
+│   │   ├── data/            # Local JSON storage for users and projects
+│   │   └── requirements.txt # Python dependencies
+│   │
+│   ├── contracts/           # Algorand Smart Contracts (Python/Puya)
+│   │   ├── smart_contracts/ # Logic for Escrow, Marketplace, HustleScore, etc.
+│   │   ├── tests/           # Pytest suite for contract validation
+│   │   ├── poetry.lock      # Dependency lock file
+│   │   └── pyproject.toml   # Project configuration and dependencies
+│   │
+│   └── frontend/            # React + TypeScript Frontend
+│       ├── src/
+│       │   ├── components/  # UI Components (Feed, Marketplace, Wallet, etc.)
+│       │   ├── hooks/       # Custom React hooks (Auth, Escrow, PeraWallet)
+│       │   ├── services/    # Integration logic for API and Blockchain
+│       │   ├── contracts/   # Auto-generated contract clients
+│       │   └── styles/      # Global CSS and Tailwind configurations
+│       ├── public/          # Static assets
+│       ├── package.json     # Node.js dependencies and scripts
+│       └── vite.config.ts   # Vite build configuration
+│
+├── README.md                # Project overview and documentation
+├── WALKTHROUGH.md           # Step-by-step guide for project features
+├── Alokit_setup.md          # Environment setup instructions
+└── VERIFY.sh                # Script for project verification/testing
 ---
 
 ## ⚡ Quick Start
